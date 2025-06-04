@@ -1,19 +1,17 @@
-public class Player {
+import java.util.Scanner;
 
-    public Player(String name) {
-        name = "lexi";
+public class Player {
+    private String name;
+
+    public Player() {
+        Scanner n = new Scanner(System.in);
+        System.out.println("What is this player's name?");
+        String nam = n.nextLine();
+        name = nam;
     }
 
     public String getName() {
-        return "hello";
-    }
-
-    // public Points getPoints() {
-
-    // }
-
-    public boolean theirTurn() {
-        return true;
+        return name;
     }
 
 }
